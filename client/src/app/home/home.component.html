@@ -1,0 +1,16 @@
+  <div id="myDIV" class="header">
+  <h2>Notes List</h2>
+  <input type="text"  #todoname placeholder="Enter notes List...">
+  <span (click)="addNotesList(todoname.value)" class="addBtn">Add</span>
+</div>
+<ng-container  *ngIf="listexist;else nodata">
+<ul id="myUL">
+  <li *ngFor="let list of alllist">{{list.name}}</li>
+ 
+</ul>  
+</ng-container>
+
+<ng-template #nodata>
+   <div class="alert alert-info">No Data Available</div>
+</ng-template>
+

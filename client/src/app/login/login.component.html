@@ -1,0 +1,26 @@
+
+
+<form  [formGroup]="loginForm"  >
+
+  <div>{{globalObj.message}}</div>
+
+  <div class="input-layout"><i class="fa fa-fw fa-user iconposition"></i>
+    <input type="text" class="form-control cleanup validate-empty" formControlName='username' placeholder="USERNAME" required="" autofocus="" />
+      <span class="highlight"></span>
+      <span class="bar"></span>
+     <!-- <label>USERNAME</label>-->
+  </div>
+  <div class="input-layout">
+  <i class="fa fa-fw fa-key iconposition"></i>
+  <input type="password" class="form-control validate-empty" formControlName='password' placeholder="PASSWORD" required=""/>
+
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <!--<label>PASSWORD</label>-->
+  </div>
+  <button (click)="onSubmit(loginForm.value)" type="button">Login</button>
+  <button [routerLink]="['/signup']" type="button">Sign Up</button>
+</form>
+
+
+

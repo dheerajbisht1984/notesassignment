@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "textnotes": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "textnotes",
+    "password": "EDU23*EXM23",
+    "name": "textnotes",
+    "user": "root",
+    "connector": "mysql"
+  }
+}
